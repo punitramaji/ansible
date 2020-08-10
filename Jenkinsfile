@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    enviornment {
-      VERSION = 1.2
-    }
     stages{
       stage ("checkout") {
         steps {
