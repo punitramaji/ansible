@@ -20,7 +20,7 @@ pipeline {
       stage ("deploy") {
         steps {
           echo 'checkout source code'
-          sh 'sudo ./install.sh'
+          sh 'chmod +x install.sh && sh install.sh'
         }
       }
     }
