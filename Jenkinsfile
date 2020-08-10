@@ -4,11 +4,13 @@ pipeline {
       stage ("checkout") {
         steps {
           echo 'checkout source code'
+          git 'https://github.com/punitramaji/ecommerce-demo.git'
         }
       }
       stage ("build") {
         steps {
           echo 'checkout source code'
+          pwd
         }
       }
       stage ("test") {
