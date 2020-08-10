@@ -10,7 +10,6 @@ pipeline {
       stage ("build") {
         steps {
           echo 'checkout source code'
-          pwd
         }
       }
       stage ("test") {
